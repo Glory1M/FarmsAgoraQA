@@ -4,7 +4,7 @@ describe('template spec', () => {
   })
 
   
-  it('visit farmsagora', function() {
+  it.only('visit farmsagora', function() {
     //clicking actions on the landing page not including book a demo, login and register at the header*/
     cy.visit('https://farmsagora.com/');
     cy.get(':nth-child(1) > .sc-bbSZdi > .sc-fBWQRz > a > svg').click();
@@ -84,7 +84,7 @@ describe('template spec', () => {
     
 
 
-  it.only('seller registration', function() {
+  it('seller registration', function() {
     /* Visit the platform's home page */
     cy.visit('https://farmsagora-web-fe-v2-983483261599.us-central1.run.app/');
     
